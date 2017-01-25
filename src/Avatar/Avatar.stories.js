@@ -9,7 +9,7 @@ import Avatar from './Avatar';
 storiesOf('Avatar', module)
   .addDecorator(withKnobs)
   .addDecorator(muiTheme())
-  .add("Photo", () => (
+  .add('Photo', () => (
     <div style={{'padding': text('Padding', '50px')}}>
       <Avatar
         size={number('Size', 40)}
@@ -17,7 +17,7 @@ storiesOf('Avatar', module)
       />
     </div>
   ))
-  .add("Text", () => (
+  .add('Text', () => (
     <div style={{'padding': text('Padding', '50px')}}>
       <Avatar
         backgroundColor={text('Background Color', '')}
