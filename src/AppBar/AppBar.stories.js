@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { storiesOf, action, linkTo } from '@kadira/storybook';
 import { muiTheme } from 'storybook-addon-material-ui';
-import { withKnobs, text, boolean, array, number, select } from '@kadira/storybook-addon-knobs'
+import { withKnobs, text, boolean, array, number, select } from '@kadira/storybook-addon-knobs';
 
 import AppBar from './AppBar';
 

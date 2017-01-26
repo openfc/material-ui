@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { storiesOf, action, linkTo } from '@kadira/storybook';
 import { muiTheme } from 'storybook-addon-material-ui';
-import { withKnobs, text, boolean, array, number, select } from '@kadira/storybook-addon-knobs'
+import { withKnobs, text, boolean, array, number, select } from '@kadira/storybook-addon-knobs';
 import NotificationsIcon from 'material-ui/svg-icons/social/notifications';
 import IconButton from 'material-ui/IconButton';
 import UploadIcon from 'material-ui/svg-icons/file/cloud-upload';
-import FolderIcon from 'material-ui/svg-icons/file/folder-open'
+import FolderIcon from 'material-ui/svg-icons/file/folder-open';
 
 import Badge from './Badge';
 
