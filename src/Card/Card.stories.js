@@ -7,8 +7,7 @@ import { withKnobs, text, boolean, array, number, select } from '@kadira/storybo
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from '.';
 import FlatButton from '../FlatButton';
 
-function getStyleDisplay(boolValue)
-{
+function getStyleDisplay(boolValue) {
     return boolValue ? 'block' : 'none';
 }
 
