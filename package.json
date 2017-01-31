@@ -39,7 +39,7 @@
     "test:integration:watch": "cross-env NODE_ENV=test babel-node test/watch.js integration",
     "test:unit": "cross-env NODE_ENV=test babel-node test/index.js unit",
     "test:unit:watch": "cross-env NODE_ENV=test babel-node test/watch.js unit",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -s ./.storybook/static -p 6006",
     "build-storybook": "build-storybook"
   },
   "peerDependencies": {
