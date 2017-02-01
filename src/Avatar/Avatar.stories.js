@@ -13,7 +13,7 @@ storiesOf('Avatar', module)
     <div style={{'padding': text('Padding', '50px')}}>
       <Avatar
         size={number('Size', 40)}
-        src={text('Src', 'http://www.material-ui.com/v0.15.0-beta.2/images/uxceo-128.jpg')}
+        src={text('Src', '/images/avatars/uxceo-128.jpg')}
       />
     </div>
   ))

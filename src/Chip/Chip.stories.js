@@ -28,7 +28,7 @@ storiesOf('Chip', module)
         }
         {boolean('Photo Avatar Display', true) &&
           <Avatar
-            src={text('Src', 'http://www.material-ui.com/v0.15.0-beta.2/images/uxceo-128.jpg')}
+            src={text('Src', '/images/avatars/uxceo-128.jpg')}
             />
         }
           {text('Chip Text', 'Chip Text')}
