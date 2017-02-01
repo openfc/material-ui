@@ -6,6 +6,7 @@ import { withKnobs, text, boolean, array, number, select } from '@kadira/storybo
 
 import List from './List';
 import ListItem from './ListItem';
+import Paper from '../Paper';
 import Avatar from '../Avatar';
 import Divider from '../Divider';
 import Subheader from '../Subheader';
@@ -52,7 +53,7 @@ storiesOf('List', module)
   .addDecorator(withKnobs)
   .addDecorator(muiTheme())
   .add('Simple', () => (
-    <div style={{'margin': text('Margin', '50px'), width: text('Width', '300px'), border: text('Border', '1px solid #D9D9D9')}}>
+    <Paper  style={{margin: text('Margin', '50px'), width: text('Width', '300px')}}>
         <List>
             <ListItem primaryText='Inbox' leftIcon={<ContentInbox />} />
             <ListItem primaryText='Starred' leftIcon={<ActionGrade />} />
@@ -65,10 +66,10 @@ storiesOf('List', module)
             <ListItem primaryText='Spam' rightIcon={<ActionInfo />} />
             <ListItem primaryText='Follow up' rightIcon={<ActionInfo />} />
         </List>
-    </div>
+    </Paper>
   ))
   .add('Chat list', () => (
-    <div style={{'margin': text('Margin', '50px'), width: text('Width', '300px'), border: text('Border', '1px solid #D9D9D9')}}>
+    <Paper  style={{margin: text('Margin', '50px'), width: text('Width', '300px')}}>
         <List>
             <Subheader>Recent chats</Subheader>
             <ListItem
@@ -109,10 +110,10 @@ storiesOf('List', module)
                 leftAvatar={<Avatar src='images/avatars/jsa-128.jpg' />}
             />
         </List>
-    </div>
+    </Paper>
   ))
   .add('Contacts list', () => (
-    <div style={{'margin': text('Margin', '50px'), width: text('Width', '300px'), border: text('Border', '1px solid #D9D9D9')}}>
+    <Paper  style={{margin: text('Margin', '50px'), width: text('Width', '300px')}}>
         <List>
             <ListItem
                 primaryText='Chelsea Otakan'
@@ -165,10 +166,10 @@ storiesOf('List', module)
                 rightAvatar={<Avatar src='images/avatars/angelceballos-128.jpg' />}
             />
         </List>
-    </div>
+    </Paper>
   ))
   .add('Folder list', () => (
-    <div style={{'margin': text('Margin', '50px'), width: text('Width', '300px'), border: text('Border', '1px solid #D9D9D9')}}>
+    <Paper  style={{margin: text('Margin', '50px'), width: text('Width', '300px')}}>
         <List>
             <Subheader inset={true}>Folders</Subheader>
             <ListItem
@@ -206,10 +207,10 @@ storiesOf('List', module)
                 secondaryText='Jan 10, 2014'
             />
         </List>
-    </div>
+    </Paper>
   ))
   .add('Nested list', () => (
-    <div style={{'margin': text('Margin', '50px'), width: text('Width', '300px'), border: text('Border', '1px solid #D9D9D9')}}>
+    <Paper  style={{margin: text('Margin', '50px'), width: text('Width', '300px')}}>
         <List>
             <Subheader>Nested List Items</Subheader>
             <ListItem primaryText='Sent mail' leftIcon={<ContentSend />} />
@@ -245,10 +246,10 @@ storiesOf('List', module)
               ]}
             />
         </List>
-    </div>
+    </Paper>
   ))
   .add('Settings list', () => (
-    <div style={{'margin': text('Margin', '50px'), width: text('Width', '300px'), border: text('Border', '1px solid #D9D9D9')}}>
+    <Paper  style={{margin: text('Margin', '50px'), width: text('Width', '300px')}}>
         <List>
             <Subheader>General</Subheader>
             <ListItem
@@ -300,10 +301,10 @@ storiesOf('List', module)
             <ListItem primaryText='Sounds' leftCheckbox={<Checkbox />} />
             <ListItem primaryText='Video sounds' leftCheckbox={<Checkbox />} />
         </List>
-    </div>
+    </Paper>
   ))
   .add('Phone list', () => (
-    <div style={{'margin': text('Margin', '50px'), width: text('Width', '400px'), border: text('Border', '1px solid #D9D9D9')}}>
+    <Paper  style={{margin: text('Margin', '50px'), width: text('Width', '300px')}}>
         <List>
             <ListItem
                 leftIcon={<CommunicationCall color={indigo500} />}
@@ -331,10 +332,10 @@ storiesOf('List', module)
                 secondaryText='Work'
             />
         </List>
-    </div>
+    </Paper>
   ))
   .add('Messages list', () => (
-    <div style={{'margin': text('Margin', '50px'), width: text('Width', '400px'), border: text('Border', '1px solid #D9D9D9')}}>
+    <Paper  style={{margin: text('Margin', '50px'), width: text('Width', '300px')}}>
         <List>
             <Subheader>Today</Subheader>
             <ListItem
@@ -402,5 +403,5 @@ storiesOf('List', module)
                 secondaryTextLines={2}
             />
         </List>
-    </div>
+    </Paper>
   ));
