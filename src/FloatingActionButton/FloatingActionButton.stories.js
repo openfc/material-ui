@@ -1,8 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { storiesOf, action, linkTo } from '@kadira/storybook';
+import { storiesOf } from '@kadira/storybook';
 import { muiTheme } from 'storybook-addon-material-ui';
-import { withKnobs, text, boolean, array, number, select } from '@kadira/storybook-addon-knobs';
+import { withKnobs, text, boolean } from '@kadira/storybook-addon-knobs';
 
 import FloatingActionButton from './FloatingActionButton';
 import ContentAdd from '../svg-icons/content/add';
@@ -12,18 +11,18 @@ storiesOf('FloatingActionButton', module)
   .addDecorator(withKnobs)
   .addDecorator(muiTheme())
   .add(null, () => (
-    <div style={{'padding': text('Padding', '50px')}}>
-        <FloatingActionButton            
-            mini={boolean('Mini', false)}
-            secondary={boolean('Secondary', false)}
-            disabled={boolean('Disabled', false)}
-            href={text('Href', '')}
-            target={text('Target', '_blank')}
-            backgroundColor={text('Background Color', '')}
-            disabledColor={text('Disabled Color', '')}
-        >
-            {boolean('Add Icon Display', true) && <ContentAdd />}
-            {boolean('Android Icon Display', false) && <ActionAndroid />}            
-        </FloatingActionButton>
-    </div>
+      <div style={{ padding: text('Padding', '50px') }}>
+          <FloatingActionButton
+              mini={boolean('Mini', false)}
+              secondary={boolean('Secondary', false)}
+              disabled={boolean('Disabled', false)}
+              href={text('Href', '')}
+              target={text('Target', '_blank')}
+              backgroundColor={text('Background Color', '')}
+              disabledColor={text('Disabled Color', '')}
+          >
+              {boolean('Add Icon Display', true) && <ContentAdd />}
+              {boolean('Android Icon Display', false) && <ActionAndroid />}
+          </FloatingActionButton>
+      </div>
   ));

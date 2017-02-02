@@ -6,7 +6,12 @@
 // When you add this file, we won't add the default configurations which is similar
 // to "React Create App". This only has babel loader to load JavaScript.
 
+var path = require('path');
+
 module.exports = {
+  eslint: {
+    configFile: '.storybook/.eslintrc'
+  },
   plugins: [
     // your custom plugins
   ],
@@ -15,7 +20,13 @@ module.exports = {
       {
         test: /\.(png|jpe?g|gif)$/,
         loader: "url-loader?mimetype=image/png"
-      }
+      },
+      {
+        test: /\.stories.js$/,
+        loaders: [ 'eslint-loader' ],
+        include: path.resolve(__dirname, '../src/'),
+        exclude: /node_modules/
+      },
     ],
   },
 };
