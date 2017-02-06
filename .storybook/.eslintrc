@@ -15,7 +15,8 @@
         "import/no-extraneous-dependencies": [2, { devDependencies: true }],
         "babel/object-curly-spacing": 0,
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-        "react/jsx-boolean-value": 0
+        "react/jsx-boolean-value": 0,
+        "react/no-multi-comp": 0
     },
     "parser": "babel-eslint",
     "settings": {
