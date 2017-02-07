@@ -15,6 +15,7 @@ storiesOf('DatePicker', module)
               disabled={boolean('Disabled', false)}
               disableYearSelection={boolean('Disable Year Selection', false)}
               hintText={text('Hint Text', 'Дата')}
+              errorText={text('Error Text', '')}
               mode={select('Mode', ['portrait', 'landscape'], 'portrait')}
               container={select('Container', ['dialog', 'inline'], 'dialog')}
               autoOk={boolean('Auto Ok', true)}
