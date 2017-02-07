@@ -10,11 +10,13 @@ storiesOf('FontIcon', module)
   .addDecorator(muiTheme())
   .add(null, () => (
       <div style={{ padding: text('Padding', '50px') }}>
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
           <FontIcon
+              className="material-icons"
               color={text('Color', '')}
               hoverColor={text('Hover Color', 'Red')}
           >
-              {text('Text', 'Text')}
+              {text('Icon Name', 'favorite')}
           </FontIcon>
       </div>
   ));
